@@ -1,0 +1,17 @@
+com\wipro\springboot_tms\repository\TaskRepository.class
+com\wipro\springboot_tms\service\UserService.class
+com\wipro\springboot_tms\repository\UserRepository.class
+com\wipro\springboot_tms\entity\Task.class
+com\wipro\springboot_tms\controller\UserController.class
+com\wipro\springboot_tms\service\TaskService.class
+com\wipro\springboot_tms\config\CorsConfig$1.class
+com\wipro\springboot_tms\entity\Status.class
+com\wipro\springboot_tms\dto\TaskRequest.class
+com\wipro\springboot_tms\dto\TaskResponse.class
+com\wipro\springboot_tms\entity\User.class
+com\wipro\springboot_tms\SpringbootTmsApplication.class
+com\wipro\springboot_tms\dto\UserResponse.class
+com\wipro\springboot_tms\controller\AuthController.class
+com\wipro\springboot_tms\dto\UserRequest.class
+com\wipro\springboot_tms\config\CorsConfig.class
+com\wipro\springboot_tms\controller\TaskController.class

@@ -1,0 +1,16 @@
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\config\CorsConfig.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\controller\AuthController.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\controller\TaskController.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\controller\UserController.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\dto\TaskRequest.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\dto\TaskResponse.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\dto\UserRequest.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\dto\UserResponse.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\entity\Status.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\entity\Task.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\entity\User.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\repository\TaskRepository.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\repository\UserRepository.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\service\TaskService.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\service\UserService.java
+S:\springboot_tms_ready\springboot_tms\src\main\java\com\wipro\springboot_tms\SpringbootTmsApplication.java
