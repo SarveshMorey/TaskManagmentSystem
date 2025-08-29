@@ -1,0 +1,22 @@
+
+<div class="container mt-5" style="max-width:520px;">
+  <div class="card p-4 shadow-sm">
+    <h2 class="text-center mb-3">Create Account</h2>
+    <form (ngSubmit)="submit()" [formGroup]="form" novalidate>
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input class="form-control" formControlName="username" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" formControlName="email" type="email" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input class="form-control" formControlName="password" type="password" />
+      </div>
+      <button class="btn btn-primary w-100" type="submit" [disabled]="form.invalid">Sign Up</button>
+    </form>
+    <div *ngIf="error" class="alert alert-danger mt-3">{{error}}</div>
+  </div>
+</div>

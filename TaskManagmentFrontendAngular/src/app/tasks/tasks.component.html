@@ -1,0 +1,55 @@
+<div class="task-list-container">
+  <div class="card shadow-lg p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="m-0 text-primary fw-bold">📋 Task List</h3>
+      <button class="btn btn-success btn-lg px-4" (click)="add()">+ New Task</button>
+    </div>
+
+    <div *ngIf="loading" class="alert alert-info text-center">Loading tasks...</div>
+
+    <div class="table-responsive" *ngIf="tasks?.length">
+      <table class="table table-hover align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Due Date</th>
+            <th class="text-center">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let t of tasks; trackBy: trackByTaskId">
+            <td>{{ t.taskId }}</td>
+            <td class="title-cell">{{ t.title }}</td>
+            <td>
+              <span class="badge"
+                [ngClass]="{
+                  'bg-warning text-dark': t.status === 'PENDING',
+                  'bg-info': t.status === 'IN_PROGRESS',
+                  'bg-success': t.status === 'COMPLETED'
+                }">
+                {{ t.status }}
+              </span>
+            </td>
+            <td>{{ t.dueDate || '-' }}</td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-primary me-2" (click)="edit(t)">Edit</button>
+              <button class="btn btn-sm btn-outline-success me-2"
+                      (click)="markComplete(t)"
+                      [disabled]="t.status === 'COMPLETED'">
+                Complete
+              </button>
+              <button class="btn btn-sm btn-outline-danger" (click)="delete(t)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div *ngIf="!loading && !tasks?.length" class="alert alert-secondary text-center">
+      No tasks yet. Click <b>"New Task"</b> to create one.
+    </div>
+  </div>
+</div>
