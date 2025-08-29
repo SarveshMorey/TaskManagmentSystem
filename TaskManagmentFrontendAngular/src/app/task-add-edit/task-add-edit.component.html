@@ -1,0 +1,39 @@
+<div class="task-form-container">
+  <div class="card shadow-lg p-4">
+    <h3 class="form-title mb-4 text-center">
+      {{ id ? '✏️ Edit Task' : '➕ Create New Task' }}
+    </h3>
+    <form [formGroup]="form" (ngSubmit)="save()">
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Title</label>
+        <input class="form-control" formControlName="title" placeholder="Enter task title" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Description</label>
+        <textarea rows="3" class="form-control" formControlName="description" placeholder="Describe the task"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Status</label>
+        <select class="form-select" formControlName="status">
+          <option value="PENDING">Pending</option>
+          <option value="IN_PROGRESS">In Progress</option>
+          <option value="COMPLETED">Completed</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Due Date</label>
+        <input type="date" class="form-control" formControlName="dueDate">
+      </div>
+
+      <div class="d-flex justify-content-between mt-4">
+        <a class="btn btn-outline-secondary px-4" [routerLink]="['/tasks']">Cancel</a>
+        <button class="btn btn-primary px-4" type="submit" [disabled]="loading">
+          {{ loading ? 'Saving...' : 'Save Task' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
